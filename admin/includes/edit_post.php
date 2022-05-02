@@ -58,15 +58,6 @@
     }
 
 
-
-
-
-
-
-
-
-
-
 ?>
 
 <form action="" method='post' enctype="multipart/form-data">
@@ -90,8 +81,7 @@
 
                     echo "<option value='{$cat_id}'>{$cat_title}</option>";
                 }
-            
-                                            
+                                       
             ?>            
         </select>
     </div>
