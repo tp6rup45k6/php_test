@@ -62,7 +62,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> Profie</a>
+                        <a href="profile.php"><i class="fa fa-fw fa-dashboard"></i> Profie</a>
                     </li>
                 </ul>
             </div>
