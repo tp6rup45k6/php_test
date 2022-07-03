@@ -55,6 +55,8 @@
 
         comfirmQuery($update_query);
 
+
+        echo "<p class='bg-success'>Post Updated. <a href='../post.php?p_id={$the_post_id}' >View post</a> or <a href='./posts.php'>Edit More Post</a></p>";
     }
 
 
@@ -92,9 +94,23 @@
     </div>
 
     <div class="form-group">
+        <select name="post_status" id="">
+            <option value="<?php echo $post_status; ?>"><?php echo $post_status; ?></option>
+            <?php
+            if($post_status == 'published'){
+                echo "<option value='draft'>draft</option>";
+            }else{
+                echo "<option value='published'>published</option>";
+            }
+            ?>
+        </select>
+    </div>
+
+
+    <!-- <div class="form-group">
         <label for="status">Post Status</label>
         <input value="<?php echo $post_status; ?>" type='text' class="form-control" name="post_status">
-    </div>
+    </div> -->
 
     <div class="form-group">
         <img src="../images/<?php echo $post_image; ?>" width=100 ><input type='file' name="image">
